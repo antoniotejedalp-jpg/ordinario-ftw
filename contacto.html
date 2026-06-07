@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div id="contenedor-principal">
-        <div id="menu">
+    <main id="contenedor-principal">
+        <nav id="menu" aria-label="Navegación principal">
             <h2 id="btn-hamburguesa" style="cursor: pointer;">
                 <img src="icono.svg" alt="menu" width="32" height="32"> Navegación
             </h2>
@@ -23,68 +23,71 @@
                 <a href="galeria.html">Galería</a>
                 <a href="contacto.html">Contacto</a>
             </div>
-        </div>
+        </nav>
         <br>
-        <h2 class="morada">Guía de Contacto</h2>
-        <p>¿Tienes alguna sugerencia para un mod, o encontraste algún error en nuestras guías? ¡Déjanos un mensaje!</p>
-        
-        <p id="l2">Llena el siguiente formulario y te responderemos lo antes posible.</p>
+        <section aria-labelledby="contacto-titulo">
+            <h2 class="morada" id="contacto-titulo">Guía de Contacto</h2>
+            <p>¿Tienes alguna sugerencia para un mod, o encontraste algún error en nuestras guías? ¡Déjanos un mensaje!</p>
+            
+            <p id="l2">Llena el siguiente formulario y te responderemos lo antes posible.</p>
 
-        <form action="#" method="POST">
-            <div class="campo-grupo">
-                <label for="nombre">Nombre o Nickname:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre en el juego" required>
-            </div>
+            <form action="#" method="POST">
+                <div class="campo-grupo">
+                    <label for="nombre">Nombre o Nickname:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre en el juego" required>
+                </div>
 
-            <div class="campo-grupo">
-                <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
-            </div>
+                <div class="campo-grupo">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
 
-            <div class="campo-grupo">
-                <label for="password">Clave de Seguridad (Simulada):</label>
-                <input type="password" id="password" name="password" placeholder="Ingresa una contraseña" required>
-            </div>
+                <div class="campo-grupo">
+                    <label for="password">Clave de Seguridad (Simulada):</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa una contraseña" required>
+                </div>
 
-            <div class="campo-grupo">
-                <label>Launcher Preferido:</label>
-                <div class="opciones-grupo">
-                    <div class="opcion-item">
-                        <input type="radio" id="r-prism" name="launcher_pref" value="prism" checked>
-                        <label for="r-prism" style="display:inline; color:var(--color-texto-secundario);">Prism Launcher</label>
-                    </div>
-                    <div class="opcion-item">
-                        <input type="radio" id="r-curse" name="launcher_pref" value="curseforge">
-                        <label for="r-curse" style="display:inline; color:var(--color-texto-secundario);">CurseForge</label>
+                <div class="campo-grupo">
+                    <label>Launcher Preferido:</label>
+                    <div class="opciones-grupo">
+                        <div class="opcion-item">
+                            <input type="radio" id="r-prism" name="launcher_pref" value="prism" checked>
+                            <label for="r-prism" style="display:inline; color:var(--color-texto-secundario);">Prism Launcher</label>
+                        </div>
+                        <div class="opcion-item">
+                            <input type="radio" id="r-curse" name="launcher_pref" value="curseforge">
+                            <label for="r-curse" style="display:inline; color:var(--color-texto-secundario);">CurseForge</label>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="campo-grupo">
-                <label>Mods que te interesan:</label>
-                <div class="opciones-grupo">
-                    <div class="opcion-item">
-                        <input type="checkbox" id="chk-deceased" name="interes_mod" value="deceased">
-                        <label for="chk-deceased" style="display:inline; color:var(--color-texto-secundario);">DeceasedCraft</label>
-                    </div>
-                    <div class="opcion-item">
-                        <input type="checkbox" id="chk-cobble" name="interes_mod" value="cobblemon">
-                        <label for="chk-cobble" style="display:inline; color:var(--color-texto-secundario);">Cobblemon</label>
-                    </div>
-                    <div class="opcion-item">
-                        <input type="checkbox" id="chk-caves" name="interes_mod" value="alex">
-                        <label for="chk-caves" style="display:inline; color:var(--color-texto-secundario);">Alex's Caves</label>
+                <div class="campo-grupo">
+                    <label>Mods que te interesan:</label>
+                    <div class="opciones-grupo">
+                        <div class="opcion-item">
+                            <input type="checkbox" id="chk-deceased" name="interes_mod" value="deceased">
+                            <label for="chk-deceased" style="display:inline; color:var(--color-texto-secundario);">DeceasedCraft</label>
+                        </div>
+                        <div class="opcion-item">
+                            <input type="checkbox" id="chk-cobble" name="interes_mod" value="cobblemon">
+                            <label for="chk-cobble" style="display:inline; color:var(--color-texto-secundario);">Cobblemon</label>
+                        </div>
+                        <div class="opcion-item">
+                            <input type="checkbox" id="chk-caves" name="interes_mod" value="alex">
+                            <label for="chk-caves" style="display:inline; color:var(--color-texto-secundario);">Alex's Caves</label>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="campo-grupo">
-                <label for="mensaje">Tu Mensaje o Sugerencia:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu sugerencia..." required></textarea>
-            </div>
+                <div class="campo-grupo">
+                    <label for="mensaje">Tu Mensaje o Sugerencia:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu sugerencia..." required></textarea>
+                </div>
 
-            <button type="submit" style="background-color: var(--color-primario); color: #000000; padding: 12px 24px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%;">Enviar Mensaje</button>
-        </form> 
+                <button type="submit" style="background-color: var(--color-primario); color: #000000; padding: 12px 24px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%;">Enviar Mensaje</button>
+            </form> 
+        </section>
+    </main>
     <footer style="text-align: center; margin-top: 50px; padding: 25px 0; border-top: 1px solid var(--color-borde); color: var(--color-texto-secundario);">
         <p><strong style="color: white;">Wiki de Mods de Minecraft</strong> | Proyecto Final</p>
         <p>Desarrollado para la materia de Fundamentos de Tecnología Web - 2026</p>
@@ -93,4 +96,5 @@
         </p>
     </footer>
     <script src="script.js"></script>
+</body>
 </html>
