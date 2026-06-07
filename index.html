@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div id="Contenedor-principal">
+    <div id="contenedor-principal">
         <div id="menu">
             <h2><img src="icono.svg" alt="menu" width="32" height="32"> Navegación</h2>
             <a href="index.html">Inicio</a>
@@ -18,7 +18,7 @@
             <a href="contacto.html">Contacto</a>
         </div>
         <br>
-        <h2 class="morado">Bienvenido a la Wiki de mods</h2>
+        <h2 class="morada">Bienvenido a la Wiki de mods</h2>
         <p>En este portal encontraras informacion detallada sobre configuracions,
             mecanicas y secretos de los mods de supervivencia y exploracion mas
             populares en la comunidad de minecraft.
@@ -40,6 +40,12 @@
             <li>Guías de captura y biomas.</li> 
             <li>Comparativas de gestores de mods.</li>
         </ul>
+        <br>
+        <h3 class="morada">Buscador Dinámico de Mods</h3>
+        <p>Busca mods por nombre o categoría:</p>
+        <input type="text" id="buscador-mods" placeholder="Ejemplo: Exploracion o Coblemos" style="margin-bottom: 15px;">
+        <div id="tabla-dinamica-mods" class="tabla-contenedor"></div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

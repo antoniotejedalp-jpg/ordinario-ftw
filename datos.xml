@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wikimo
+<datos_wiki>
+    <usuarios>
+        <usuario>
+            <nickname>admin</nickname>
+            <password>12345</password>
+        </usuario>
+        <usuario>
+            <nickname>antonio</nickname>
+            <password>listi2026</password>
+        </usuario>
+    </usuarios>
+
+    <mods>
+        <mod>
+            <nombre>DeceasedCraft</nombre>
+            <categoria>Supervivencia</categoria>
+            <dificultad>Extrema</dificultad>
+        </mod>
+        <mod>
+            <nombre>Cobblemon</nombre>
+            <categoria>Aventura</categoria>
+            <categoria>Media</categoria>
+        </mod>
+        <mod>
+            <nombre>Alex's Caves</nombre>
+            <categoria>Exploración</categoria>
+            <dificultad>Alta</dificultad>
+        </mod>
+    </mods>
+</datos_wiki>
