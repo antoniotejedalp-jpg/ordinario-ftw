@@ -20,7 +20,7 @@
         <mod>
             <nombre>Cobblemon</nombre>
             <categoria>Aventura</categoria>
-            <categoria>Media</categoria>
+            <dificultad>Media</dificultad>
         </mod>
         <mod>
             <nombre>Alex's Caves</nombre>
@@ -31,6 +31,16 @@
             <nombre>RLCraft</nombre>
             <categoria>Supervivencia Hardcore</categoria>
             <dificultad>Extrema</dificultad>
+        </mod>
+        <mod>
+            <nombre>Create</nombre>
+            <categoria>Ingeniería</categoria>
+            <dificultad>Media</dificultad>
+        </mod>
+        <mod>
+            <nombre>Twilight Forest</nombre>
+            <categoria>Aventura</categoria>
+            <dificultad>Media</dificultad>
         </mod>
     </mods>
 </datos_wiki>
