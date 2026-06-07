@@ -1,5 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const btnHamburguesa = document.getElementById('btn-hamburguesa');
+    const menuEnlaces = document.getElementById('menu-enlaces');
+
+    if (btnHamburguesa && menuEnlaces) {
+        btnHamburguesa.addEventListener('click', () => {
+            menuEnlaces.classList.toggle('oculto');
+        });
+    }
+
+
     const contenedorTabla = document.getElementById('tabla-dinamica-mods');
     const buscador = document.getElementById('buscador-mods');
     if (contendorTabla) {

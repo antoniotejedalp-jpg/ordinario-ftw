@@ -27,5 +27,10 @@
             <categoria>Exploración</categoria>
             <dificultad>Alta</dificultad>
         </mod>
+        <mod>
+            <nombre>RLCraft</nombre>
+            <categoria>Supervivencia Hardcore</categoria>
+            <dificultad>Extrema</dificultad>
+        </mod>
     </mods>
 </datos_wiki>
