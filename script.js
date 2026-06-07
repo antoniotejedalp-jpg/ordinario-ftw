@@ -5,7 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btnHamburguesa && menuEnlaces) {
         btnHamburguesa.addEventListener('click', () => {
-            menuEnlaces.classList.toggle('oculto');
+            console.log("¡Hiciste clic en el menú Navegación!"); 
+            if (menuEnlaces.classList.contains('oculto')) {
+                menuEnlaces.classList.remove('oculto');
+                console.log("El menú ahora se MUESTRA");
+            } else {
+                menuEnlaces.classList.add('oculto');
+                console.log("El menú ahora se ESCONDE");
+            }
         });
     }
 
