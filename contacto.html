@@ -22,6 +22,7 @@
                 <a href="twilightforest.html">Twilight Forest</a>
                 <a href="galeria.html">Galería</a>
                 <a href="contacto.html">Contacto</a>
+                <a href="login.html" style="color: var(--color-primario);">Login</a>
             </div>
         </nav>
         <br>
@@ -43,7 +44,7 @@
                 </div>
 
                 <div class="campo-grupo">
-                    <label for="password">Clave de Seguridad (Simulada):</label>
+                    <label for="password">Clave de Seguridad:</label>
                     <input type="password" id="password" name="password" placeholder="Ingresa una contraseña" required>
                 </div>
 
@@ -63,7 +64,7 @@
 
                 <div class="campo-grupo">
                     <label>Mods que te interesan:</label>
-                    <div class="opciones-grupo">
+                    <div class="opciones-grupo" style="flex-wrap: wrap;">
                         <div class="opcion-item">
                             <input type="checkbox" id="chk-deceased" name="interes_mod" value="deceased">
                             <label for="chk-deceased" style="display:inline; color:var(--color-texto-secundario);">DeceasedCraft</label>
@@ -75,6 +76,18 @@
                         <div class="opcion-item">
                             <input type="checkbox" id="chk-caves" name="interes_mod" value="alex">
                             <label for="chk-caves" style="display:inline; color:var(--color-texto-secundario);">Alex's Caves</label>
+                        </div>
+                        <div class="opcion-item">
+                            <input type="checkbox" id="chk-rlcraft" name="interes_mod" value="rlcraft">
+                            <label for="chk-rlcraft" style="display:inline; color:var(--color-texto-secundario);">RLCraft</label>
+                        </div>
+                        <div class="opcion-item">
+                            <input type="checkbox" id="chk-create" name="interes_mod" value="create">
+                            <label for="chk-create" style="display:inline; color:var(--color-texto-secundario);">Create</label>
+                        </div>
+                        <div class="opcion-item">
+                            <input type="checkbox" id="chk-twilight" name="interes_mod" value="twilight">
+                            <label for="chk-twilight" style="display:inline; color:var(--color-texto-secundario);">Twilight Forest</label>
                         </div>
                     </div>
                 </div>

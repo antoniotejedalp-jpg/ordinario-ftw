@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datos_wiki [
+    <!ELEMENT datos_wiki (usuarios, mods)>
+    <!ELEMENT usuarios (usuario+)>
+    <!ELEMENT usuario (nickname, password)>
+    <!ELEMENT nickname (#PCDATA)>
+    <!ELEMENT password (#PCDATA)>
+    <!ELEMENT mods (mod+)>
+    <!ELEMENT mod (nombre, categoria, dificultad)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT categoria (#PCDATA)>
+    <!ELEMENT dificultad (#PCDATA)>
+]>
 <datos_wiki>
     <usuarios>
         <usuario>
